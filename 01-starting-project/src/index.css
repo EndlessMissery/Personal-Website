@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.5;
+  color: #1f1f1f;
+  background-color: #fdfdfd;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  min-height: 90%;
+  letter-spacing: 20px;
+  border: 5px solid #e6e6e6; /* Add border to the HTML element */
+  margin: 5rem;
+}
+
+body {
+  margin: 0; /* Remove default margin to ensure the border covers the entire page */
+}
+
+main {
+  width: 90%;
+  max-width: 50rem;
+  margin: auto;
+}
+
+main h2 {
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+  color: #1f1f1f;
+}
+
+#examples menu {
+  margin: 1rem 10rem;
+  padding: 0;
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+}
+
+#examples menu button {
+  position: absolute;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #1f1f1f;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 10px;
+}
+
+#examples menu button:hover {
+  font-size: larger;
+}
+
+#examples menu button.active {
+  font-weight: bold;
+}
+
+#tab-content {
+  width: 20rem;
+  height: 500px;
+  position: absolute;
+  margin-top: -20rem;
+  margin-left: 50rem;
+  text-align: left;
+  border-radius: 6px;
+  letter-spacing: 5px;
+  line-height: 20px;
+}
+
+#tab-content h3 {
+  margin: 0;
+}
+
+#tab-content code {
+  font-size: 1rem;
+}
+
+.quote {
+  position: relative;
+  width: 40rem;
+  margin-top: 50rem;
+  margin-left: 57rem;
+
+}
+
+.first-part {
+  position: relative;
+  margin-top: -50rem;
+  margin-left: 0rem;
+  width: 500px;
+  height: 500px;
+  letter-spacing: 0.5rem;
+}
+
+.sec-part {
+  position: relative;
+  margin-top: -20rem;
+  margin-left: 10rem;
+  width: 500px;
+  height: 500px;
+  letter-spacing: 0.5rem;
+}
+
+.thrd-part {
+    position: relative;
+    margin-top: -20rem;
+    margin-left: 20rem;
+    width: 500px;
+    height: 500px;
+    letter-spacing: 0.5rem;
+}
