@@ -1,0 +1,55 @@
+.about,
+.about-2,
+.about-3 {
+  text-align: justify;
+  font-size: larger;
+  letter-spacing: 7px;
+  position: relative;
+}
+
+.about {
+  background: linear-gradient(to bottom, #e7e7e7, #1f1f1f);
+  -webkit-background-clip: text;
+  color: transparent;
+  left: 50%;
+  margin-top: -115px;
+}
+
+.about-2 {
+  background: linear-gradient(to left, #1f1f1f, rgb(0, 0, 0), #1f1f1f);
+  -webkit-background-clip: text;
+  color: transparent;
+  left: 150%;
+}
+
+.about-3 {
+  background: linear-gradient(to top, #e7e7e7, #1f1f1f);
+  -webkit-background-clip: text;
+  color: transparent;
+  left: 250%;
+}
+
+.first-part,
+.sec-part,
+.thrd-part {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  letter-spacing: 0.5rem;
+}
+
+.first-part {
+  margin-top: -50rem;
+  margin-left: 0rem;
+}
+
+.sec-part {
+  margin-top: -20rem;
+  margin-left: 10rem;
+}
+
+.thrd-part {
+  margin-top: -20rem;
+  margin-left: 20rem;
+}
+

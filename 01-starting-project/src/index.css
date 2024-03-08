@@ -26,16 +26,14 @@ body {
   flex-direction: column;
   gap: 1rem;
   list-style: none;
-
 }
 
 .verticalline {
   position: absolute;
-  width: 5px; /* Adjust the width of the line as needed */
+  width: 5px;
   height: 400px;
   margin-left: 700px;
   margin-top: 250px;
-  
   background: linear-gradient(to top, transparent, #e6e6e6 50%, #e6e6e6 50%, transparent);
 }
 
@@ -49,8 +47,7 @@ body {
   display: block;
   transition: all 0.2s ease-in-out;
   letter-spacing: 10px;
-  background: none ;
-  
+  background: none;
 }
 
 #examples menu button:hover {
@@ -74,85 +71,3 @@ body {
   line-height: 20px;
 }
 
-.quote {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  font-size: small;
-  margin: 5rem;
-  margin-left: 1rem;
-  color: #b9b9b9;
-  width: 50rem;
-  text-align: end;
-}
-
-.about {
-  text-align: end;
-  background: linear-gradient(to bottom, #e7e7e7, #1f1f1f);
-  -webkit-background-clip: text;
-  color: transparent;
-  display: block;
-  left: 50%;
-  margin-top: -75px;
-}
-
-.about-2 {
-  text-align: justify;
-  background: linear-gradient(to left, #1f1f1f, rgb(0, 0, 0), #1f1f1f);
-  -webkit-background-clip: text;
-  color: transparent;
-  display: block;
-  position: relative;
-  left: 150%;
-}
-
-
-.about-3 {
-  text-align: start;
-  background: linear-gradient(to top, #e7e7e7, #1f1f1f);
-  -webkit-background-clip: text;
-  color: transparent;
-  position: relative;
-  left: 250%;
-  
-  }
-
-
-.first-part {
-  position: relative;
-  margin-top: -50rem;
-  margin-left: 0rem;
-  width: 500px;
-  height: 500px;
-  letter-spacing: 0.5rem;
-}
-
-.sec-part {
-  position: relative;
-  margin-top: -20rem;
-  margin-left: 10rem;
-  width: 500px;
-  height: 500px;
-  letter-spacing: 0.5rem;
-}
-
-.thrd-part {
-    position: relative;
-    margin-top: -20rem;
-    margin-left: 20rem;
-    width: 500px;
-    height: 500px;
-    letter-spacing: 0.5rem;
-}
-
-.projects {
-  position: relative;
-  display: flex;
-  flex-wrap: nowrap;
-  width: 400px;
-  margin-left: 70px;
-}
-
-.about, .about2, .about3 {
-  position: relative;
-}

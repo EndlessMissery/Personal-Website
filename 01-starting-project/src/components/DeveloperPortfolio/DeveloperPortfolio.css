@@ -1,6 +1,9 @@
 .projects {
-    width: 100%;
-    margin-left: -100px;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 400px;
+    margin-left: 70px;
   }
   
   .difficulty-sections {
@@ -21,10 +24,6 @@
     height: 100%;
     text-align: center;
     cursor: default;
-
-  }
-
-  .beginner, .intermediate, .expert {
     margin-bottom: 1.5rem;
     border-radius: 5px;
   }
@@ -33,7 +32,7 @@
     background: linear-gradient(160deg, #ffffff, #000000, #ffffff);
     -webkit-background-clip: text;
     color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
     font-size: large;
     font-weight: bold;
     background: none;
@@ -44,13 +43,16 @@
     letter-spacing: 5px;
     cursor: pointer;
     transition: color 0.2s ease-in-out;
-    margin: 1rem ;
+    margin: 1rem;
   }
-
+  
   #links:hover {
     color: #e4e4e4;
+    text-decoration: none;
   }
-
+  
   #links:active {
     color: #1f1f1f;
   }
+  
+  

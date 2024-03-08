@@ -1,0 +1,12 @@
+.quote {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: small;
+    margin: 5rem;
+    margin-left: 1rem;
+    color: #b9b9b9;
+    width: 50rem;
+    text-align: end;
+  }
+  
