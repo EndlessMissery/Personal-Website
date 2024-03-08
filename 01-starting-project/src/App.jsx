@@ -108,7 +108,7 @@ function App() {
   return (
     <div>
       <Header />
-
+      <div className="verticalline"></div>
       <section id="examples">
         <menu>
           <TabButton
