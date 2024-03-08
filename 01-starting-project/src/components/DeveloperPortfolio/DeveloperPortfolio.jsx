@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import "./DeveloperPortfolio.css"; // Assuming you have a CSS file for your styles
 
 const DeveloperPortfolio = ({ projects }) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Set isVisible to true after the component mounts
+    setIsVisible(true);
+  }, []);
+
   const renderProjectsByDifficulty = (difficulty) => {
     return projects
       .filter((project) => project.difficulty === difficulty)
       .map((project, index) => (
-        <div key={index}>
+        <div key={index} className={`project-item ${isVisible ? "fade-in" : ""}`}>
           <br />
           <h3>{project.title}</h3>
           <p>{project.technologies.join(", ")}</p>
@@ -19,7 +27,7 @@ const DeveloperPortfolio = ({ projects }) => {
   };
 
   return (
-    <div className="projects">
+    <div className={`projects ${isVisible ? "fade-in" : ""}`}>
       <div className="difficulty-sections">
         <div className="beginner">
           <h2>Beginner</h2>

@@ -9,7 +9,6 @@ const AboutMe = ({ selectedTopic }) => {
       <h3>{EXAMPLES[selectedTopic].school}</h3>
       <h4>{EXAMPLES[selectedTopic].field}</h4>
       <p>{EXAMPLES[selectedTopic].year}</p>
-      <p className="quote">{EXAMPLES[selectedTopic].paragraph}</p>
       <div id="aboutme">
         <p className="about">{EXAMPLES[selectedTopic].firstPart}</p>
         <p className="about-2">{EXAMPLES[selectedTopic].secPart}</p>

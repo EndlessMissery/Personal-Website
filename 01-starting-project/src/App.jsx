@@ -4,6 +4,7 @@ import TabButton from "./components/TabButton/TabButton.jsx";
 import DeveloperPortfolio from "./components/DeveloperPortfolio/DeveloperPortfolio.jsx";
 import ContactInfo from "./components/ContactInfo/ContactInfo.jsx";
 import AboutMe from "./components/AboutMe/AboutMe.jsx";
+import Quote from "./components/Home/Home.jsx";
 import { EXAMPLES } from "./data.js";
 import "./components/Home/Home.css";
 import "./components/DeveloperPortfolio/DeveloperPortfolio.css";
@@ -26,6 +27,8 @@ function App() {
         return <DeveloperPortfolio projects={EXAMPLES.portfolio.projects} />;
       case "contact":
         return <ContactInfo />;
+      case "home": 
+        return <Quote quote="home" />;
       default:
         return <AboutMe selectedTopic={selectedTopic} />;
     }
