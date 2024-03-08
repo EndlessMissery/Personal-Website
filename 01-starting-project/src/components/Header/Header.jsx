@@ -4,7 +4,7 @@ export default function Header() {
   
     return (
       <header>
-        <h1>Name Surname</h1>
+        <h1>Roman Kalita</h1>
         <hr />
         <p>
           Designer & developer

@@ -1,0 +1,56 @@
+.projects {
+    width: 100%;
+    margin-left: -100px;
+  }
+  
+  .difficulty-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 16px;
+    margin-top: -80px;
+    background: linear-gradient(to top, #ffffff, #000000, #e4e4e4 95%);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .beginner,
+  .intermediate,
+  .expert {
+    width: 400px;
+    height: 100%;
+    text-align: center;
+    cursor: default;
+
+  }
+
+  .beginner, .intermediate, .expert {
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+  }
+  
+  #links {
+    background: linear-gradient(160deg, #ffffff, #000000, #ffffff);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-decoration: underline;
+    font-size: large;
+    font-weight: bold;
+    background: none;
+    height: 40px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    letter-spacing: 5px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    margin: 1rem ;
+  }
+
+  #links:hover {
+    color: #e4e4e4;
+  }
+
+  #links:active {
+    color: #1f1f1f;
+  }
