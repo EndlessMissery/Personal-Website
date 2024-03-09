@@ -5,8 +5,13 @@
     font-size: small;
     margin: 5rem;
     margin-left: 1rem;
-    color: #b9b9b9;
+    color: #1f1f1f;
     width: 50rem;
     text-align: end;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
   }
   
+  .fade-in {
+    opacity: 1;
+  }

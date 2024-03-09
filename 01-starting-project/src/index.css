@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   cursor: default;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 html {
@@ -30,7 +31,7 @@ body {
 
 .verticalline {
   position: absolute;
-  width: 5px;
+  width: 3px;
   height: 400px;
   margin-left: 700px;
   margin-top: 250px;
@@ -48,10 +49,11 @@ body {
   transition: all 0.2s ease-in-out;
   letter-spacing: 10px;
   background: none;
+  font-size: larger;
 }
 
 #examples menu button:hover {
-  font-size: larger;
+  font-size: x-large;
   font-weight: bolder;
 }
 

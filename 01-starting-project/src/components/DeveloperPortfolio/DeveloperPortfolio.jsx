@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./DeveloperPortfolio.css"; // Assuming you have a CSS file for your styles
+import "./DeveloperPortfolio.css";
 
 const DeveloperPortfolio = ({ projects }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -19,7 +19,8 @@ const DeveloperPortfolio = ({ projects }) => {
           <p>{project.technologies.join(", ")}</p>
           {project.link && (
             <a href={project.link} target="_blank" rel="noopener noreferrer">
-              <button id="links">View Project</button>
+              <button className="links">View Project</button>
+              <hr className="custom-hr" />
             </a>
           )}
         </div>
@@ -29,17 +30,23 @@ const DeveloperPortfolio = ({ projects }) => {
   return (
     <div className={`projects ${isVisible ? "fade-in" : ""}`}>
       <div className="difficulty-sections">
-        <div className="beginner">
-          <h2>Beginner</h2>
-          {renderProjectsByDifficulty("Beginner")}
+        <div className="difficulty-section">
+          <h2 className="difficulty-name">Beginner</h2>
+          <div className="scroll-container-beginner">
+            {renderProjectsByDifficulty("Beginner")}
+          </div>
         </div>
-        <div className="intermediate">
-          <h2>Intermediate</h2>
-          {renderProjectsByDifficulty("Intermediate")}
+        <div className="difficulty-section">
+          <h2 className="difficulty-name">Intermediate</h2>
+          <div className="scroll-container-intermediate">
+            {renderProjectsByDifficulty("Intermediate")}
+          </div>
         </div>
-        <div className="expert">
-          <h2>Expert</h2>
-          {renderProjectsByDifficulty("Expert")}
+        <div className="difficulty-section">
+          <h2 className="difficulty-name">Expert</h2>
+          <div className="scroll-container-expert">
+            {renderProjectsByDifficulty("Expert")}
+          </div>
         </div>
       </div>
     </div>

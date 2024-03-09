@@ -2,12 +2,13 @@
 .about-2,
 .about-3 {
   text-align: justify;
-  font-size: larger;
+  font-size: smaller;
   letter-spacing: 7px;
   position: relative;
 }
 
 .about {
+  text-align: end;
   background: linear-gradient(to bottom, #e7e7e7, #1f1f1f);
   -webkit-background-clip: text;
   color: transparent;
@@ -23,6 +24,7 @@
 }
 
 .about-3 {
+  text-align: start;
   background: linear-gradient(to top, #e7e7e7, #1f1f1f);
   -webkit-background-clip: text;
   color: transparent;
@@ -53,3 +55,28 @@
   margin-left: 20rem;
 }
 
+#aboutme {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.about {
+  animation-delay: 1s;
+}
+
+.about-2 {
+  animation-delay: 2s;
+}
+
+.about-3 {
+  animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

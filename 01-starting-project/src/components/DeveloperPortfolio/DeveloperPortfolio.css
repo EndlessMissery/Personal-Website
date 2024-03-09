@@ -1,73 +1,122 @@
 .projects {
-    position: relative;
-    display: flex;
-    flex-wrap: nowrap;
-    width: 400px;
-    margin-left: 70px;
-  }
-  
-  .difficulty-sections {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 16px;
-    margin-top: -80px;
-    background: linear-gradient(to top, #ffffff, #000000, #ffffff 100%);
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  
-  .beginner,
-  .intermediate,
-  .expert {
-    width: 400px;
-    height: 100%;
-    text-align: center;
-    cursor: default;
-    margin-bottom: 1.5rem;
-    border-radius: 5px;
-  }
-  
-  #links {
-    background: linear-gradient(160deg, #ffffff, #000000, #ffffff);
-    -webkit-background-clip: text;
-    color: transparent;
-    text-decoration: none;
-    font-size: large;
-    font-weight: bold;
-    background: none;
-    height: 40px;
-    width: 200px;
-    border-radius: 25px;
-    border: none;
-    letter-spacing: 5px;
-    cursor: pointer;
-    transition: color 0.2s ease-in-out;
-    margin: 1rem;
-  }
-  
-  #links:hover {
-    color: #e4e4e4;
-    text-decoration: none;
-  }
-  
-  #links:active {
-    color: #1f1f1f;
-  }
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 400px;
+  margin-left: 70px;
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
 
-  .projects {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
+.projects.fade-in {
+  opacity: 1;
+}
+
+.difficulty-sections {
+  display: flex;
+}
+
+.difficulty-section {
+  margin-right: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.scroll-container-beginner,
+.scroll-container-intermediate,
+.scroll-container-expert {
+  text-align: center;
+  height: 500px; /* Initially set max-height to 0 */
+  width: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-left: 10px;
+  transition: max-height 0.3s ease; /* Smooth transition for max-height */
+
+  /* Style the WebKit scrollbar */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: transparent transparent; /* For Firefox */
+}
+
+.scroll-container-beginner::-webkit-scrollbar,
+.scroll-container-intermediate::-webkit-scrollbar,
+.scroll-container-expert::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scroll-container-beginner::-webkit-scrollbar-thumb,
+.scroll-container-intermediate::-webkit-scrollbar-thumb,
+.scroll-container-expert::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Color of the thumb */
+  border-radius: 10px; /* Roundness of the thumb */
+}
+
+.scroll-container-beginner::-webkit-scrollbar-track,
+.scroll-container-intermediate::-webkit-scrollbar-track,
+.scroll-container-expert::-webkit-scrollbar-track {
+  background-color: transparent; /* Color of the track */
+}
+
+.difficulty-section:hover .scroll-container-beginner,
+.difficulty-section:hover .scroll-container-intermediate,
+.difficulty-section:hover .scroll-container-expert {
+  height: 500px; /* Set the desired max-height value on hover */
+  overflow-y: auto;
+}
+
+.beginner,
+.intermediate,
+.expert {
+  width: 400px;
+  height: 100%;
+  text-align: center;
+  cursor: default;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
   
-  .projects.fade-in {
-    opacity: 1;
-  }
-  
-  .projects.fade-out {
-    opacity: 0;
-  }
-  
-  .project-item {
-    /* Add styles for your project items here */
-  }
+}
+
+.links {
+  color: #1f1f1f;
+  font-weight: bold;
+  background: none;
+  height: 40px;
+  width: 200px;
+  border-radius: 25px;
+  border: none;
+  letter-spacing: 5px;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  margin: 0rem;
+  font-size: small;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.links:hover {
+  color: #000000;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  text-decoration: underline;
+
+}
+
+.links:active {
+  color: #1f1f1f;
+}
+
+/*.difficulty-name {
+  background: linear-gradient(to bottom, #ffffff, #2f2f2f 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}*/
+
+.custom-hr {
+  position: relative;
+  margin-top: 30px;
+  border: 0;
+  height: 3px;
+  background: linear-gradient(to right, #f4f4f4, #e6e6e6, #f4f4f4); /* Replace with your desired colors */
+}
