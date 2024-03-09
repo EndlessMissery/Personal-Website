@@ -26,16 +26,16 @@
 .scroll-container-intermediate,
 .scroll-container-expert {
   text-align: center;
-  height: 500px; /* Initially set max-height to 0 */
+  height: 500px;
   width: 400px;
   overflow-y: auto;
   overflow-x: hidden;
-  padding-left: 10px;
-  transition: max-height 0.3s ease; /* Smooth transition for max-height */
+  padding-left: 15px;
+  transition: max-height 0.3s ease;
 
-  /* Style the WebKit scrollbar */
-  scrollbar-width: thin; /* For Firefox */
-  scrollbar-color: transparent transparent; /* For Firefox */
+
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
 }
 
 .scroll-container-beginner::-webkit-scrollbar,
@@ -47,20 +47,20 @@
 .scroll-container-beginner::-webkit-scrollbar-thumb,
 .scroll-container-intermediate::-webkit-scrollbar-thumb,
 .scroll-container-expert::-webkit-scrollbar-thumb {
-  background-color: transparent; /* Color of the thumb */
-  border-radius: 10px; /* Roundness of the thumb */
+  background-color: transparent;
+  border-radius: 10px;
 }
 
 .scroll-container-beginner::-webkit-scrollbar-track,
 .scroll-container-intermediate::-webkit-scrollbar-track,
 .scroll-container-expert::-webkit-scrollbar-track {
-  background-color: transparent; /* Color of the track */
+  background-color: transparent;
 }
 
 .difficulty-section:hover .scroll-container-beginner,
 .difficulty-section:hover .scroll-container-intermediate,
 .difficulty-section:hover .scroll-container-expert {
-  height: 500px; /* Set the desired max-height value on hover */
+  height: 500px;
   overflow-y: auto;
 }
 
@@ -107,16 +107,11 @@
   color: #1f1f1f;
 }
 
-/*.difficulty-name {
-  background: linear-gradient(to bottom, #ffffff, #2f2f2f 100%);
-  -webkit-background-clip: text;
-  color: transparent;
-}*/
-
 .custom-hr {
   position: relative;
   margin-top: 30px;
   border: 0;
   height: 3px;
-  background: linear-gradient(to right, #f4f4f4, #e6e6e6, #f4f4f4); /* Replace with your desired colors */
+  background: linear-gradient(to right, #f4f4f4, #e6e6e6, #f4f4f4);
 }
+

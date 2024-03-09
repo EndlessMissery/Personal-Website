@@ -1,32 +1,53 @@
 header {
-    margin: 5rem 10rem;
-  }
-  
-  header img {
-    height: 5rem;
-    width: 10rem;
-    object-fit: cover;
-  }
-  
-  header h1 {
-    margin: 0 -5rem;
-    font-size: 5rem;
-    color: #1f1f1f;
-  }
-  
-  header p {
-    position: relative;
-    margin: 0rem 0.5rem;
-    font-size: 1.25rem;
-    color: #1f1f1f;
-  }
+  margin: 5rem 10rem;
+}
 
-  .under-name {
-    width: 30%;
-    position: relative;
-    margin-left: 0rem;
-    margin-top: -0.5rem;
-    border: 0;
-    height: 3px;
-    background: linear-gradient(to right, #f4f4f4, #e6e6e6, #f4f4f4); /* Replace with your desired colors */
+
+/* fade in */
+header {
+  opacity: 0;
+  animation: fadeIn 5s forwards 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
+
+
+header img {
+  height: 5rem;
+  width: 10rem;
+  object-fit: cover;
+}
+
+header h1 {
+  margin: 0 -5rem;
+  font-size: 5rem;
+  color: #1f1f1f;
+}
+
+header p {
+  position: relative;
+  margin: 0rem 0.5rem;
+  font-size: 1.25rem;
+  color: #1f1f1f;
+}
+
+
+/* underline */
+.under-name { 
+  width: 30%;
+  position: relative;
+  margin-left: 0rem;
+  margin-top: -0.5rem;
+  border: 0;
+  height: 3px;
+  background: linear-gradient(to right, #f4f4f4, #e6e6e6, #f4f4f4);
+}
+
+

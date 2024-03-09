@@ -1,17 +1,48 @@
+.quote, .author {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: small;
+  margin: 5rem;
+  margin-left: 1rem;
+  color: #1f1f1f;
+  width: 50rem;
+  text-align: end;
+  letter-spacing: 3px;
+  font-size: smaller;
+}
+
+.author {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: small;
+  margin: 5rem 5rem 3rem;
+  color: #1f1f1f;
+  width: 50rem;
+  text-align: end;
+  opacity: 0;
+  font-size: smaller;
+  text-transform: uppercase;
+}
+
+
+/* fade in */
 .quote {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    font-size: small;
-    margin: 5rem;
-    margin-left: 1rem;
-    color: #1f1f1f;
-    width: 50rem;
-    text-align: end;
+  opacity: 0;
+  animation: fadeIn 5s forwards 4s;
+}
+
+.author {
+  opacity: 0;
+  animation: fadeIn 5s forwards 5s;
+}
+
+@keyframes fadeIn {
+  from {
     opacity: 0;
-    transition: opacity 3s ease-in-out;
   }
-  
-  .fade-in {
+  to {
     opacity: 1;
   }
+}

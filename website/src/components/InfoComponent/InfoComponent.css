@@ -1,0 +1,48 @@
+.educations {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 400px;
+  margin-left: 100px;
+  margin-top: -500px;
+}
+
+.level-sections {
+  display: flex;
+}
+
+.level-section {
+  margin-right: 100px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.education-item {
+  width: 400px;
+  text-align: center;
+  cursor: default;
+  margin-left: 70px;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+}
+
+.level-name {
+  text-align: center;
+  margin-left: 45px;
+}
+
+.edu-end {
+  margin-left: -600px;
+  width: 500px;
+  margin-top: 200px;
+}
+
+/* fade in */
+.educations {
+  opacity: 0;
+  transition: opacity 5s ease-in-out;
+}
+
+.educations.fade-in {
+  opacity: 1;
+}

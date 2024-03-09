@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "sans-serif";
+    box-sizing: border-box;
+    color: #e4e4e4;
+}
+
+body {
+    background-color: #222;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #3e3e3e, #171524);
+    color: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.card::after {
+    background: black;
+    opacity: 0.5;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.25;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #171717;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: -60px;
+    font-size: 18px;
+}
+
+.search button {
+    opacity: 0.75;
+    border: 0;
+    outline: 0;
+    background: #171717;
+    border-radius: 0 100px 100px 0;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 16px;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 18px;
+    margin-top: -8px;
+}
+
+::placeholder {
+    opacity: 0.75;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    text-align: left;
+    margin-left: 30px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+/*@media screen and (max-width: 600px) {
+    .wind, .humidity {
+        font-size: 10px;
+        margin-top: 4px;
+    }
+    .col img {
+        width: 25px;
+    }
+    .weather h1 {
+        font-size: 60px;
+    }
+    .weather h2 {
+        font-size: 30px;
+    }
+    .col img {
+        width: 30px;
+        margin-right: 10px;
+    }
+  }*/
+
+h1, h2, p {
+    color: rgb(208, 208, 208);
+}

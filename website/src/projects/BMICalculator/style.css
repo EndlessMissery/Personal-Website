@@ -1,0 +1,15 @@
+.container {
+    position: relative;
+    text-align: center;
+    padding: 30px;
+}
+
+#calc_button {
+    position: relative;
+    margin-top: 20px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: larger;
+    margin-bottom: 20px;
+}

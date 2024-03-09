@@ -55,9 +55,10 @@
   margin-left: 20rem;
 }
 
+/* fade in */
 #aboutme {
   opacity: 0;
-  animation: fadeIn 2s ease-in-out forwards;
+  animation: fadeIn 5s ease-in-out forwards;
 }
 
 .about {

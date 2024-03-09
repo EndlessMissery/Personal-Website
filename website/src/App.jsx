@@ -4,8 +4,9 @@ import TabButton from "./components/TabButton/TabButton.jsx";
 import DeveloperPortfolio from "./components/DeveloperPortfolio/DeveloperPortfolio.jsx";
 import ContactInfo from "./components/ContactInfo/ContactInfo.jsx";
 import AboutMe from "./components/AboutMe/AboutMe.jsx";
-import Quote from "./components/Home/Home.jsx"
-//import BackgroundComponent from "./components/BackgroundComponent/BackgroundComponent.jsx";
+import Quote from "./components/Home/Home.jsx";
+import InfoComponent from "./components/InfoComponent/InfoComponent.jsx";
+// import BackgroundComponent from "./components/BackgroundComponent/BackgroundComponent.jsx";
 import { EXAMPLES } from "./data.js";
 
 function App() {
@@ -23,17 +24,17 @@ function App() {
         return <DeveloperPortfolio projects={EXAMPLES.portfolio.projects} />;
       case "contact":
         return <ContactInfo />;
-      case "home":
-        return <Quote quote="home" />;
+      case "info":
+        return <InfoComponent educations={EXAMPLES.info.educations} />;
       default:
         return <AboutMe selectedTopic={selectedTopic} />;
-        
     }
   };
 
   return (
-    <div>      
+    <div>
       <Header />
+      <Quote />
       <div className="verticalline"></div>
       <section id="examples">
         <menu>

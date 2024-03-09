@@ -3,15 +3,12 @@ import { EXAMPLES } from "../../data.js";
 import "./Home.css";
 
 const Quote = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    // Set isVisible to true after the component mounts
-    setIsVisible(true);
-  }, []);
 
   return (
-    <p className={`quote ${isVisible ? "fade-in" : ""}`}>{EXAMPLES.home.quote}</p>
+    <div>
+      <p className="quote">{EXAMPLES.home.quote}</p>
+      <p className="author">- Marilyn Manson</p>
+    </div>
   );
 };
 

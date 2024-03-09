@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./DeveloperPortfolio.css";
+import ProjectDetails from "./ProjectDetails/ProjectDetails.jsx";
 
 const DeveloperPortfolio = ({ projects }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -10,21 +11,11 @@ const DeveloperPortfolio = ({ projects }) => {
   }, []);
 
   const renderProjectsByDifficulty = (difficulty) => {
-    return projects
-      .filter((project) => project.difficulty === difficulty)
-      .map((project, index) => (
-        <div key={index} className={`project-item ${isVisible ? "fade-in" : ""}`}>
-          <br />
-          <h3>{project.title}</h3>
-          <p>{project.technologies.join(", ")}</p>
-          {project.link && (
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
-              <button className="links">View Project</button>
-              <hr className="custom-hr" />
-            </a>
-          )}
-        </div>
-      ));
+    const filteredProjects = projects.filter((project) => project.difficulty === difficulty);
+
+    return filteredProjects.map((project, index) => (
+      <ProjectDetails key={index} project={project} isVisible={isVisible} />
+    ));
   };
 
   return (
