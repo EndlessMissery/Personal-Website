@@ -5,6 +5,7 @@
   width: 25rem;
   margin-left: 4.375rem;
   font-size: auto;
+  line-height: 1.5;
 }
 
 .difficulty-sections {
@@ -64,7 +65,6 @@
   width: 25rem;
   height: 100%;
   text-align: center;
-  margin-bottom: 1.5rem;
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -79,10 +79,10 @@
   border: none;
   letter-spacing: 0.313rem;
   transition: color 0.2s ease-in-out;
-  margin: 0rem;
   font-size: small;
   transition: all 0.2s ease-in-out;
   text-transform: uppercase;
+  margin-top: 1rem;
 }
 
 .links:hover {
@@ -90,7 +90,7 @@
   text-decoration: none;
   border: none;
   outline: none;
-  font-size: larger;
+  transform: scale(1.1);
   width: 15.625rem;
 }
 
@@ -100,7 +100,7 @@
 
 .custom-hr {
   position: relative;
-  margin-top: 1.875rem;
+  margin-top: .875rem;
   border: 0;
   height: 3px;
   background: linear-gradient(to right, #f4f4f4, #e6e6e6, #f4f4f4);
@@ -122,6 +122,7 @@
     font-size: 0.65rem;
   }
   .links {
+    margin-top: 10px;
     font-size: 0.65rem;
   }
   .scroll-container-beginner,
@@ -136,5 +137,13 @@
   transition: max-height 0.3s ease;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
+}
+.links:hover {
+  color: #000000;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+  width: 15.625rem;
 }
 }
