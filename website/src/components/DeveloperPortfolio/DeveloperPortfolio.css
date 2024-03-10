@@ -92,6 +92,8 @@
   outline: none;
   transform: scale(1.1);
   width: 15.625rem;
+  -webkit-filter: drop-shadow(0 0px 10px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 0px 10px rgba(0, 0, 0, 0.5));
 }
 
 .links:active {
@@ -112,38 +114,81 @@
   animation: fadeIn 5s forwards;
 }
 
-
 /* resolution settings */
-@media only screen and (min-width: 1920px) and (max-width: 2559px) {
+/* FHD */
+@media only screen and (width: 1920px) and (height: 1080px) {
   .difficulty-sections {
-    margin-left: -20rem;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-27rem);
     margin-top: 0rem;
     max-height: 25rem;
     font-size: 0.65rem;
   }
+
   .links {
     margin-top: 10px;
     font-size: 0.65rem;
   }
+
   .scroll-container-beginner,
   .scroll-container-intermediate,
   .scroll-container-expert {
-  text-align: center;
-  max-height: 25rem;
-  width: 25rem;
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding-left: 0.938rem;
-  transition: max-height 0.3s ease;
-  scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
+    text-align: center;
+    max-height: 25rem;
+    width: 25rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 0.938rem;
+    transition: max-height 0.3s ease;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+
+  .links:hover {
+    color: #000000;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    width: 15.625rem;
+  }
 }
-.links:hover {
-  color: #000000;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  font-size: 0.8rem;
-  width: 15.625rem;
-}
+
+/* 2K */
+@media only screen and (width: 2560px) and (height: 1440px) {
+  .difficulty-sections {
+    -webkit-transform: translateX(-27rem);
+    transform: translateX(-27rem);
+    margin-left: 5rem;
+    margin-top: 3rem;
+    max-height: 30rem;
+    transform: scale(1.1);
+  }
+  .links {
+    margin-top: 10px;
+    transform: scale(1);
+  }
+
+  .scroll-container-beginner,
+  .scroll-container-intermediate,
+  .scroll-container-expert {
+    text-align: center;
+    max-height: 25rem;
+    width: 25rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 0.938rem;
+    transition: max-height 0.3s ease;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+
+  .links:hover {
+    color: #000000;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    width: 15.625rem;
+  }
 }

@@ -47,6 +47,12 @@ export const EXAMPLES = {
         technologies: ["HTML", "CSS", "JavaScript"],
         link: "/projects/Tetris/index.html",
       },
+      {
+        difficulty: "Expert",
+        title: "TBD",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        link: "TBD",
+      }
   //     {
   //       difficulty: "Beginner",
   //       title: "Calculator",

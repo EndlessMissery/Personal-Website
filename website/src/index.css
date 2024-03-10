@@ -52,7 +52,7 @@ body {
 /* resolution settings */
 @media only screen and (min-width: 1920px) and (max-width: 2559px) {
   .verticalline {
-    margin-left: 30rem;
+    margin-left: 25rem;
     margin-top: 12rem;
   }
 }

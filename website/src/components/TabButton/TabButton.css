@@ -11,20 +11,23 @@ li {
   border-radius: 6px;
   font-size: 1rem;
   display: block;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, font-weight 0.2s ease-in-out;
   letter-spacing: 0.625rem;
   background: none;
-  font-size: 1rem;
 }
 
 #examples menu button:hover {
   transform: scale(1.1);
   font-weight: bold;
+  -webkit-filter: drop-shadow(0 0px 10px rgba(0, 0, 0, .5));
+  filter: drop-shadow(0 0px 10px rgba(0, 0, 0, .5));
 }
 
 #examples menu button.active {
   font-weight: bolder;
   transform: scale(1.1);
+  -webkit-filter: drop-shadow(0 0px 10px rgba(0, 0, 0, .75));
+  filter: drop-shadow(0 0px 10px rgba(0, 0, 0, .75));
 }
 
 #examples menu {
@@ -62,13 +65,36 @@ li {
   cursor: none;
 }
 
-
-/* resolution settings */
-@media only screen and (min-width: 1920px) and (max-width: 2559px) {
+/* Firefox-specific rule */
+@-moz-document url-prefix() {
   li {
     margin-left: -4rem;
-    margin-top: -5rem;
     max-width: 1600px;
-    font-size: 0.7rem;
+    transform: scale(1);
+    position: relative;
+    top: -80px;
+  }
+}
+
+/* resolution settings */
+/* FHD */
+@media only screen and (min-width: 1920px) and (min-height: 1080px) {
+  li {
+    margin-left: -4rem;
+    max-width: 1600px;
+    transform: scale(1);
+    position: relative;
+    top: -80px;
+  }
+}
+
+/* 2K */
+@media only screen and (min-width: 2560px) and (min-height: 1440px) {
+  li {
+    margin-left: 27rem;
+    max-width: 2240px;
+    transform: scale(1.5);
+    position: relative;
+    top: -80px;
   }
 }

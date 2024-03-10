@@ -74,7 +74,8 @@
 
 
 /* resolution settings */
-@media only screen and (min-width: 1920px) and (max-width: 2559px) {
+/* FHD */
+@media only screen and (width: 1920px) and (height: 1080px) {
   .about,
   .about-2,
   .about-3 {
@@ -84,20 +85,23 @@
 
   .about {
     text-align: end;
-    top:  0px;
-    left: -50%; /* Adjust the left position as needed */
+    top: 0px;
+    left: -30%;
+    transform: translateX(-50%);
   }
 
   .about-2 {
     position: relative;
-    text-align:justify;
+    text-align: justify;
     top: 0px;
-    left: 50%; /* Adjust the left position as needed */
+    left: 70%;
+    transform: translateX(-50%);
   }
 
   .about-3 {
     text-align: start;
-    top:  0px;
-    left: 150%; /* Adjust the left position as needed */
+    top: 0px;
+    left: 170%;
+    transform: translateX(-50%);
   }
 }

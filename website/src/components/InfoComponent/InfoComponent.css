@@ -49,15 +49,37 @@
 
 
 /* resolution settings */
-@media only screen and (min-width: 1920px) and (max-width: 2559px) {
+/* FHD */
+@media only screen and (width: 1920px) and (height: 1080px) {
+  .level-name {
+    position: relative;
+    text-align: center;
+    transform: scale(1);
+  }
   .educations {
-    margin-left: -10rem;
-    top: 40px;
+    margin-left: -15rem;
+    position: relative;
+    top: 100px;
   }
   .education-item {
     font-size: 0.6rem;
   }
+}
+
+/* 2K */
+@media only screen and (width: 2560px) and (height: 1440px) {
+  .educations {
+    margin-left: 10rem;
+    position: relative;
+    top: 200px;
+    transform: scale(1);
+  }
+  .education-item {
+    width: 30rem;
+  }
   .level-name {
-    font-size: 1rem;
+    position: relative;
+    text-align: center;
+    transform: scale(1.2);
   }
 }
