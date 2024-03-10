@@ -2,54 +2,19 @@
   position: relative;
   display: flex;
   text-align: center;
-  margin: -55vh 70vh;
+  left: 45rem;
+  bottom: 40rem;
   width: 50%;
-  transform: scale(0.85);
+  transform: scale(0.75);
 }
 
 .education-item {
   margin-top: 10px;
   transform: scale(0.75);
   letter-spacing: 5px;
-  line-height: 3vh;
+  line-height: 1.5rem;
 }
 
-
-
-
-/*.educations {
-  position: relative;
-  display: flex;
-  flex-wrap: nowrap;
-  width: 25rem;
-  margin-left: 6.25rem;
-  margin-top: -31.25rem;
-}
-
-.level-sections {
-  display: flex;
-}
-
-.level-section {
-  margin-right: 6.25rem;
-  overflow: hidden;
-  text-align: center;
-}
-
-.education-item {
-  width: 25rem;
-  text-align: center;
-  cursor: none;
-  margin-left: 4.375;
-  margin-bottom: 1.5rem;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.level-name {
-  text-align: center;
-  font-size: 1.5rem;
-}
 
 /* fade in */
 .educations {
@@ -63,86 +28,5 @@
   }
   to {
     opacity: 1;
-  }
-}
-
-
-/* resolution settings */
-/* FHD */
-@media only screen and (width: 1920px) and (height: 1080px) {
-  .level-name {
-    position: relative;
-    text-align: center;
-    transform: scale(1);
-  }
-  .educations {
-    margin-left: -15rem;
-    position: relative;
-    top: 100px;
-  }
-  .education-item {
-    font-size: 0.6rem;
-  }
-}
-
-/* 2K */
-@media only screen and (width: 2560px) and (height: 1440px) {
-  .educations {
-    margin-left: 10rem;
-    position: relative;
-    top: 200px;
-    transform: scale(1);
-  }
-  .education-item {
-    width: 30rem;
-  }
-  .level-name {
-    position: relative;
-    text-align: center;
-    transform: scale(1.2);
-  }
-}
-
-@-moz-document url-prefix() {
-  .educations {
-    position: relative;
-    top: 100px;
-    transform: scale(1.2);
-    left: 850px;
-  }
-  .education-item {
-    width: 30rem;
-  }
-  .level-name {
-    position: relative;
-    text-align: center;
-    transform: scale(1);
-  }
-}
-
-
-@-moz-document url-prefix() {
-  @media only screen and (min-width: 1920px) and (min-height: 1080px) {
-    .educations {
-      position: relative;
-      display: flex;
-      flex-wrap: nowrap;
-      width: 25rem;
-      left: 0px;
-      margin-top: -31.25rem;
-    }
-    .education-item {
-      width: 25rem;
-      text-align: center;
-      cursor: none;
-      margin-left: 4.375;
-      margin-bottom: 1.5rem;
-      border-radius: 5px;
-      font-size: 0.8rem;
-    }
-    .level-name {
-      text-align: center;
-      font-size: 1rem;
-    }
   }
 }

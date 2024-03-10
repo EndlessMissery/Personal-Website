@@ -6,15 +6,16 @@ header {
 
 header p {
   position: relative;
-  left: 5vh;
+  top: 1vh;
+  top: -2vh;
 }
 
 .under-name {
   position: relative;
   width: 33vh;
   margin-left: 20vh;
-  bottom: 11.5vh;
-  height: 3px;
+  bottom: 14vh;
+  height: 2px;
   border: none;
   background: linear-gradient(to right, transparent, #cccccc, transparent);
 }
@@ -23,6 +24,11 @@ header p {
 header {
   opacity: 0;
   animation: fadeIn 5s forwards;
+}
+
+.under-name {
+  opacity: 0;
+  animation: fadeIn 5s forwards 1.5s;
 }
 
 @keyframes fadeIn {
@@ -35,7 +41,6 @@ header {
 }
 
 header p {
-  position: relative;
   left: -12vh;
   transform: scale(.75);
 }

@@ -2,6 +2,8 @@ import React from "react";
 import "./InfoComponent.css";
 import FadeIn from "../FadeIn/FadeIn";
 
+
+
 const InfoComponent = ({ educations }) => {
   const renderEducationByLevel = (level) => {
     return educations

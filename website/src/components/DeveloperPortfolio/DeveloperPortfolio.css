@@ -6,25 +6,25 @@
 
 .difficulty-section {
   position: relative;
-  bottom: 70vh;
-  left: 20vh;
+  bottom: 44rem;
+  left: 12.5rem;
   text-align: center;
-  line-height: 3vh;
-  width: 40vh;
-  margin-left: 1vh;
+  line-height: 1rem;
+  width: 22.5rem;
+  margin-left: 0.5rem;
   transform: scale(.75);
-  letter-spacing: 0.75vh;
+  letter-spacing: 0.5rem;
 }
 
 .difficulty-name {
   position: relative;
-  margin-bottom: 5vh;
+  margin-bottom: 3rem;
 }
 
 .links {
   position: relative;
-  margin-bottom: 5vh;
-  margin-top: 5vh;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
   color: #1f1f1f;
   font-weight: bold;
   background: none;
@@ -32,13 +32,13 @@
   transition: color 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   text-transform: uppercase;
-  letter-spacing: 0.75vh;
+  letter-spacing: 0.5rem;
   transform: scale(1.2);
 }
 
 .custom-hr {
   position: relative;
-  margin-bottom: 1vh;
+  margin-bottom: 0.5rem;
   border: none;
   height: 4px;
   background: linear-gradient(to right, #f4f4f4, #cccccc, #f4f4f4);
@@ -46,10 +46,10 @@
 
 .level-hr {
   position: relative;
-  top: -46vh;
-  width: 80vh;
+  top: -28rem;
+  width: 60rem;
   border: none;
-  left: 73vh;
+  left: 10rem;
   height: 3px;
   background: linear-gradient(to right, #f4f4f4, #cccccc, #f4f4f4);
 }
@@ -60,10 +60,10 @@
 .scroll-container-intermediate,
 .scroll-container-expert {
   text-align: center;
-  height: 50vh;
+  height: 31.5rem;
   overflow-y: auto;
   overflow-x: hidden;
-  padding-left: 2vh;
+  padding-left: 1rem;
   transition: max-height 0.3s ease;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
@@ -72,7 +72,7 @@
 .scroll-container-beginner::-webkit-scrollbar,
 .scroll-container-intermediate::-webkit-scrollbar,
 .scroll-container-expert::-webkit-scrollbar {
-  width: 0vh;
+  width: 0rem;
 }
 
 .scroll-container-beginner::-webkit-scrollbar-thumb,
@@ -90,7 +90,7 @@
 .difficulty-section:hover .scroll-container-beginner,
 .difficulty-section:hover .scroll-container-intermediate,
 .difficulty-section:hover .scroll-container-expert {
-  height: 50vh;
+  height: 31rem;
   overflow-y: auto;
 }
 
@@ -100,7 +100,7 @@
   color: #000000;
   text-decoration: none;
   transform: scale(1.3);
-  width: 30vh;
+  width: 15rem;
 }
 
 .links:active {
