@@ -1,57 +1,38 @@
 li {
-  font-size: 1rem;
+/* menu animations */
   opacity: 0;
   animation: fadeIn 5s forwards 1s;
-}
-
-#examples menu button {
-  position: absolute;
-  margin: 10rem 1rem;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  display: block;
-  transition: transform 0.2s ease-in-out, font-weight 0.2s ease-in-out;
-  letter-spacing: 0.625rem;
-  background: none;
-}
-
-#examples menu button:hover {
-  transform: scale(1.1);
-  font-weight: bold;
-  -webkit-filter: drop-shadow(0 0px 10px rgba(0, 0, 0, .5));
-  filter: drop-shadow(0 0px 10px rgba(0, 0, 0, .5));
-}
-
-#examples menu button.active {
-  font-weight: bolder;
-  transform: scale(1.1);
-  -webkit-filter: drop-shadow(0 0px 10px rgba(0, 0, 0, .75));
-  filter: drop-shadow(0 0px 10px rgba(0, 0, 0, .75));
+  z-index: 1;
 }
 
 #examples menu {
-  margin: 1rem 10rem;
-  padding: 0;
-  padding-top: 10rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  list-style: none;
-}
-
-#tab-content {
-  width: 20rem;
-  height: 500px;
   position: relative;
-  margin-top: -20rem;
-  margin-left: 50rem;
-  text-align: left;
-  border-radius: 6px;
-  letter-spacing: 0.313rem;
-  line-height: 1.25rem;
+  bottom: 15vh;
+  list-style: none;
+  left: 3vh;
 }
 
+#examples menu button {
+  position: relative;
+  left: 10vh;
+  bottom: 3vh;
+  border: none;
+  letter-spacing: 0.75vh;
+/* menu animations */
+  transition: transform 0.2s ease-in-out, font-weight 0.2s ease-in-out;
+  background-color: transparent;
+}
+
+.verticalline {
+  position: relative;
+  background: linear-gradient(to top, transparent, #cccccc 50%, #cccccc 50%, transparent);
+  height: 33vh;
+  width: 3px;
+  left: 40vh;
+  top: 10vh;
+}
+
+/* menu animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -61,40 +42,27 @@ li {
   }
 }
 
-* {
-  cursor: none;
+#examples menu button:hover {
+  transform: scale(1.1);
+  font-weight: bolder;
 }
 
-/* Firefox-specific rule */
-@-moz-document url-prefix() {
-  li {
-    margin-left: -4rem;
-    max-width: 1600px;
-    transform: scale(1);
-    position: relative;
-    top: -80px;
+#examples menu button.active {
+  transform: scale(1.1);
+  font-weight: bolder;
+} 
+
+.verticalline {
+  opacity: 0;
+  animation: fadeIn 5s forwards 3s;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-}
-
-/* resolution settings */
-/* FHD */
-@media only screen and (min-width: 1920px) and (min-height: 1080px) {
-  li {
-    margin-left: -4rem;
-    max-width: 1600px;
-    transform: scale(1);
-    position: relative;
-    top: -80px;
-  }
-}
-
-/* 2K */
-@media only screen and (min-width: 2560px) and (min-height: 1440px) {
-  li {
-    margin-left: 27rem;
-    max-width: 2240px;
-    transform: scale(1.5);
-    position: relative;
-    top: -80px;
+  to {
+    opacity: 1;
   }
 }

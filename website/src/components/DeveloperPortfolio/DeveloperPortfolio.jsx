@@ -3,6 +3,13 @@ import "./DeveloperPortfolio.css";
 import ProjectDetails from "./ProjectDetails/ProjectDetails.jsx";
 import FadeIn from "../FadeIn/FadeIn.jsx";
 
+
+
+
+
+
+
+
 const DeveloperPortfolio = ({ projects }) => {
   const renderProjectsByDifficulty = (difficulty) => {
     const filteredProjects = projects.filter((project) => project.difficulty === difficulty);
@@ -15,6 +22,7 @@ const DeveloperPortfolio = ({ projects }) => {
   return (
     <FadeIn>
       <div className="projects">
+      <hr className="level-hr" />
         <div className="difficulty-sections">
           <div className="difficulty-section">
             <h2 className="difficulty-name">Beginner</h2>

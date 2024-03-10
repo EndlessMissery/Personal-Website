@@ -1,58 +1,15 @@
 * {
-  box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   cursor: none;
 }
 
-*:hover {
-  cursor: none;
-}
-
 html {
-  line-height: 1.5;
   color: #1f1f1f;
-  background-color: #f4f4f4;
-  -webkit-text-size-adjust: 100%;
-  min-height: 90%;
-  letter-spacing: 1.25rem;
-  margin: 5rem;
+  background-color: #f8f8f8;
+  letter-spacing: 0.75rem;
 }
 
 body {
   margin: 0;
   overflow: hidden;
-}
-
-.verticalline {
-  position: absolute;
-  width: 3px;
-  height: 25rem;
-  margin-left: 46.875rem;
-  margin-top: 15.625rem;
-  background: linear-gradient(to top, transparent, #e6e6e6 50%, #e6e6e6 50%, transparent);
-}
-
-/* fade in */
-.verticalline {
-  opacity: 0;
-  animation: fadeIn 5s forwards 3s;
-}
-
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-
-/* resolution settings */
-@media only screen and (min-width: 1920px) and (max-width: 2559px) {
-  .verticalline {
-    margin-left: 25rem;
-    margin-top: 12rem;
-  }
 }

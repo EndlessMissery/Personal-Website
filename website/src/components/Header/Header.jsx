@@ -7,11 +7,9 @@ export default function Header() {
       <FadeIn>
         <header>
           <h1>Roman Kalita</h1>
-          <hr className="under-name" />
-          <p>
-            Designer & developer
-          </p>
+          <p>Designer & developer</p>
         </header>
+        <hr className="under-name" />
       </FadeIn>
     );
   }

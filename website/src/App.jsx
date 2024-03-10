@@ -4,11 +4,19 @@ import TabButton from "./components/TabButton/TabButton.jsx";
 import DeveloperPortfolio from "./components/DeveloperPortfolio/DeveloperPortfolio.jsx";
 import ContactInfo from "./components/ContactInfo/ContactInfo.jsx";
 import AboutMe from "./components/AboutMe/AboutMe.jsx";
-import Quote from "./components/Home/Home.jsx";
 import InfoComponent from "./components/InfoComponent/InfoComponent.jsx";
-// import BackgroundComponent from "./components/BackgroundComponent/BackgroundComponent.jsx";
-import { EXAMPLES } from "./data.js";
+import { EDUCATION } from "./components/InfoComponent/education.js";
+import { PORTFOLIO } from "./components/DeveloperPortfolio/portfolio.js";
+import { CONTACT } from "./components/ContactInfo/contact.js";
+import { ABOUT } from "./components/AboutMe/about.js";
 import CustomCursor from "./components/CustomCursor/CustomCursor.jsx";
+
+
+
+
+
+
+
 
 function App() {
   const [selectedTopic, setSelectedTopic] = useState(() => localStorage.getItem("selectedTopic") || "home");
@@ -22,21 +30,23 @@ function App() {
   const renderContent = () => {
     switch (selectedTopic) {
       case "portfolio":
-        return <DeveloperPortfolio projects={EXAMPLES.portfolio.projects} />;
+        return <DeveloperPortfolio projects={PORTFOLIO.portfolio.projects} />;
       case "contact":
-        return <ContactInfo />;
+        return <ContactInfo contactData={CONTACT.contact} />;
       case "info":
-        return <InfoComponent educations={EXAMPLES.info.educations} />;
+        return <InfoComponent educations={EDUCATION.info.educations} />;
+      case "about":
+        return <AboutMe aboutData={ABOUT.about} />
       default:
-        return <AboutMe selectedTopic={selectedTopic} />;
+        return null;
     }
   };
 
+  
   return (
     <div>
       <CustomCursor />
       <Header />
-      <Quote />
       <div className="verticalline"></div>
       <section id="examples">
         <menu>

@@ -8,7 +8,7 @@ const ContactInfo = () => {
     const phoneNumber = '+420773101064';
 
     // Display a confirmation prompt with custom styling
-    const confirmation = window.confirm(`Do you want to call Mr. Kalita?`);
+    const confirmation = window.confirm(`Do you want to call Roman?`);
     
     // If the user confirms, initiate the phone call
     if (confirmation) {

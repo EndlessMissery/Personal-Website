@@ -2,35 +2,33 @@
 .about-2,
 .about-3 {
   text-align: justify;
-  font-size: smaller;
+  font-size: larger;
   letter-spacing: 0.438rem;
   position: relative;
+  width: 400px;
 }
 
 .about {
   text-align: end;
-  background: linear-gradient(to bottom, #e7e7e7, #1f1f1f);
+  background: linear-gradient(to bottom, #ababab, #1f1f1f);
   -webkit-background-clip: text;
   color: transparent;
   left: 50%;
-  top: -50px;
 }
 
 .about-2 {
   background: linear-gradient(to left, #1f1f1f, rgb(0, 0, 0), #1f1f1f);
   -webkit-background-clip: text;
   color: transparent;
-  left: 150%;
-  top: -50px;
+  left: 175%;
 }
 
 .about-3 {
   text-align: start;
-  background: linear-gradient(to top, #e7e7e7, #1f1f1f);
+  background: linear-gradient(to top, #ababab, #1f1f1f);
   -webkit-background-clip: text;
   color: transparent;
-  left: 250%;
-  top: -50px;
+  left: 300%;
 }
 
 .first-part,
@@ -79,13 +77,14 @@
   .about,
   .about-2,
   .about-3 {
-    font-size: 0.6rem;
+    font-size: 1rem;
     letter-spacing: 0.2rem;
+    width: 100%;
   }
 
   .about {
     text-align: end;
-    top: 0px;
+    top: -50px;
     left: -30%;
     transform: translateX(-50%);
   }
@@ -93,15 +92,86 @@
   .about-2 {
     position: relative;
     text-align: justify;
-    top: 0px;
+    top: -50px;
     left: 70%;
     transform: translateX(-50%);
   }
 
   .about-3 {
     text-align: start;
-    top: 0px;
+    top: -50px;
     left: 170%;
     transform: translateX(-50%);
   }
 }
+
+@-moz-document url-prefix() {
+  .about,
+  .about-2,
+  .about-3 {
+    text-align: justify;
+    font-size: larger;
+    letter-spacing: 0.438rem;
+    position: relative;
+    width: 400px;
+  }
+  
+  .about {
+    text-align: end;
+    background: linear-gradient(to bottom, #ababab, #1f1f1f);
+    -webkit-background-clip: text;
+    color: transparent;
+    top: -100px;
+    left: 25%;
+  }
+  
+  .about-2 {
+    background: linear-gradient(to left, #1f1f1f, rgb(0, 0, 0), #1f1f1f);
+    -webkit-background-clip: text;
+    color: transparent;
+    top: -100px;
+    left: 150%;
+  }
+  
+  .about-3 {
+    text-align: start;
+    background: linear-gradient(to top, #ababab, #1f1f1f);
+    -webkit-background-clip: text;
+    color: transparent;
+    top: -100px;
+    left: 275%;
+  }
+}
+
+
+@-moz-document url-prefix() {@media only screen and (width: 1920px) and (height: 1080px) {
+  .about,
+  .about-2,
+  .about-3 {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    width: 100%;
+  }
+  .about {
+    text-align: end;
+    top: -100px;
+    left: -100px;
+
+  }
+
+  .about-2 {
+    position: relative;
+    text-align: justify;
+    top: -100px;
+    left: 250px;
+    transform: translateX(-50%);
+  }
+
+  .about-3 {
+    text-align: start;
+    top: -100px;
+    left: 600px;
+    transform: translateX(-50%);
+  }
+}}
+
