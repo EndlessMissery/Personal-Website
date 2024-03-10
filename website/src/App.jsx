@@ -8,9 +8,10 @@ import Quote from "./components/Home/Home.jsx";
 import InfoComponent from "./components/InfoComponent/InfoComponent.jsx";
 // import BackgroundComponent from "./components/BackgroundComponent/BackgroundComponent.jsx";
 import { EXAMPLES } from "./data.js";
+import CustomCursor from "./components/CustomCursor/CustomCursor.jsx";
 
 function App() {
-  const [selectedTopic, setSelectedTopic] = useState(() => localStorage.getItem("selectedTopic"));
+  const [selectedTopic, setSelectedTopic] = useState(() => localStorage.getItem("selectedTopic") || "home");
 
   useEffect(() => {
     if (selectedTopic) localStorage.setItem("selectedTopic", selectedTopic);
@@ -33,6 +34,7 @@ function App() {
 
   return (
     <div>
+      <CustomCursor />
       <Header />
       <Quote />
       <div className="verticalline"></div>
@@ -44,7 +46,7 @@ function App() {
                 isSelected={selectedTopic === topic}
                 onSelect={() => handleSelect(topic)}>
                 {topic.charAt(0).toUpperCase() + topic.slice(1)}
-              </TabButton>
+              </TabButton>    
               <br />
             </React.Fragment>
           ))}

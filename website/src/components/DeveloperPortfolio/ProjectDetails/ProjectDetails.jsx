@@ -1,10 +1,9 @@
 import React from "react";
 
 const ProjectDetails = ({ project }) => {
-  const projectLink = project.link; // Assuming project.link is the local file path
+  const projectLink = project.link;
 
   const handleViewProject = () => {
-    // Open a new window or tab to display the content of the HTML file
     window.open(projectLink, "_blank");
   };
 

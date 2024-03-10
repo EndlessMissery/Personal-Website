@@ -2,9 +2,9 @@
   position: relative;
   display: flex;
   flex-wrap: nowrap;
-  width: 400px;
-  margin-left: 100px;
-  margin-top: -500px;
+  width: 25rem;
+  margin-left: 6.25rem;
+  margin-top: -31.25rem;
 }
 
 .level-sections {
@@ -12,37 +12,52 @@
 }
 
 .level-section {
-  margin-right: 100px;
+  margin-right: 6.25rem;
   overflow: hidden;
   text-align: center;
 }
 
 .education-item {
-  width: 400px;
+  width: 25rem;
   text-align: center;
   cursor: default;
-  margin-left: 70px;
+  margin-left: 4.375;
   margin-bottom: 1.5rem;
   border-radius: 5px;
+  font-size: 1rem;
 }
 
 .level-name {
   text-align: center;
-  margin-left: 45px;
-}
-
-.edu-end {
-  margin-left: -600px;
-  width: 500px;
-  margin-top: 200px;
+  font-size: 1.5rem;
 }
 
 /* fade in */
 .educations {
   opacity: 0;
-  transition: opacity 5s ease-in-out;
+  animation: fadeIn 5s forwards;
 }
 
-.educations.fade-in {
-  opacity: 1;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* resolution settings */
+@media only screen and (min-width: 1920px) and (max-width: 2559px) {
+  .educations {
+    margin-left: -10rem;
+    top: 40px;
+  }
+  .education-item {
+    font-size: 0.6rem;
+  }
+  .level-name {
+    font-size: 1rem;
+  }
 }

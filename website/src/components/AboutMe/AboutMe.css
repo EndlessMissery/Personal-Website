@@ -3,7 +3,7 @@
 .about-3 {
   text-align: justify;
   font-size: smaller;
-  letter-spacing: 7px;
+  letter-spacing: 0.438rem;
   position: relative;
 }
 
@@ -13,7 +13,7 @@
   -webkit-background-clip: text;
   color: transparent;
   left: 50%;
-  margin-top: -115px;
+  top: -50px;
 }
 
 .about-2 {
@@ -21,6 +21,7 @@
   -webkit-background-clip: text;
   color: transparent;
   left: 150%;
+  top: -50px;
 }
 
 .about-3 {
@@ -29,14 +30,15 @@
   -webkit-background-clip: text;
   color: transparent;
   left: 250%;
+  top: -50px;
 }
 
 .first-part,
 .sec-part,
 .thrd-part {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 31.25rem;
+  height: 31.25rem;
   letter-spacing: 0.5rem;
 }
 
@@ -58,19 +60,7 @@
 /* fade in */
 #aboutme {
   opacity: 0;
-  animation: fadeIn 5s ease-in-out forwards;
-}
-
-.about {
-  animation-delay: 1s;
-}
-
-.about-2 {
-  animation-delay: 2s;
-}
-
-.about-3 {
-  animation-delay: 3s;
+  animation: fadeIn 5s forwards;
 }
 
 @keyframes fadeIn {
@@ -79,5 +69,35 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+
+/* resolution settings */
+@media only screen and (min-width: 1920px) and (max-width: 2559px) {
+  .about,
+  .about-2,
+  .about-3 {
+    font-size: 0.6rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .about {
+    text-align: end;
+    top:  0px;
+    left: -50%; /* Adjust the left position as needed */
+  }
+
+  .about-2 {
+    position: relative;
+    text-align:justify;
+    top: 0px;
+    left: 50%; /* Adjust the left position as needed */
+  }
+
+  .about-3 {
+    text-align: start;
+    top:  0px;
+    left: 150%; /* Adjust the left position as needed */
   }
 }

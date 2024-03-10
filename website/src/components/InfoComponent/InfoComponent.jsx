@@ -1,18 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./InfoComponent.css";
+import FadeIn from "../FadeIn/FadeIn";
 
 const InfoComponent = ({ educations }) => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
-
   const renderEducationByLevel = (level) => {
     return educations
       .filter((education) => education.level === level)
       .map((education, index) => (
-        <div key={index} className={`education-item ${isVisible ? "fade-in" : ""}`}>
+        <div key={index} className="education-item">
           <br />
           <h3>{education.school}</h3>
           <h4>{Array.isArray(education.field) ? education.field.join(", ") : education.field}</h4>
@@ -22,21 +17,20 @@ const InfoComponent = ({ educations }) => {
   };
 
   return (
-    <div className={`educations ${isVisible ? "fade-in" : ""}`}>
-      <div className="level-sections">
-        <div className="level-section">
-          <h2 className="level-name">College</h2>
-          {renderEducationByLevel("College")}
-        </div>
-        <div className="level-section">
-          <h2 className="level-name">High School</h2>
-          <p className="field">{educations.field}</p>
-          {renderEducationByLevel("High school")}
+    <FadeIn>
+      <div className="educations">
+        <div className="level-sections">
+          <div className="level-section">
+            <h2 className="level-name">College</h2>
+            {renderEducationByLevel("College")}
           </div>
+          <div className="level-section">
+            <h2 className="level-name">High School</h2>
+            {renderEducationByLevel("High school")}
+          </div>
+        </div>
       </div>
-      
-    </div>
-    
+    </FadeIn>
   );
 };
 

@@ -1,11 +1,52 @@
 li {
+  font-size: 1rem;
   opacity: 0;
-  animation: fadeIn 5s forwards 3s;
+  animation: fadeIn 5s forwards 1s;
 }
 
-.fade-in-complete {
-  animation: none !important; /* Disable the animation */
-  opacity: 1 !important; /* Ensure full opacity */
+#examples menu button {
+  position: absolute;
+  margin: 10rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  display: block;
+  transition: transform 0.2s ease-in-out;
+  letter-spacing: 0.625rem;
+  background: none;
+  font-size: 1rem;
+}
+
+#examples menu button:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+#examples menu button.active {
+  font-weight: bolder;
+  transform: scale(1.1);
+}
+
+#examples menu {
+  margin: 1rem 10rem;
+  padding: 0;
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+}
+
+#tab-content {
+  width: 20rem;
+  height: 500px;
+  position: relative;
+  margin-top: -20rem;
+  margin-left: 50rem;
+  text-align: left;
+  border-radius: 6px;
+  letter-spacing: 0.313rem;
+  line-height: 1.25rem;
 }
 
 @keyframes fadeIn {
@@ -14,5 +55,20 @@ li {
   }
   to {
     opacity: 1;
+  }
+}
+
+* {
+  cursor: none;
+}
+
+
+/* resolution settings */
+@media only screen and (min-width: 1920px) and (max-width: 2559px) {
+  li {
+    margin-left: -4rem;
+    margin-top: -5rem;
+    max-width: 1600px;
+    font-size: 0.7rem;
   }
 }

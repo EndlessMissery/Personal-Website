@@ -1,7 +1,11 @@
 * {
   box-sizing: border-box;
-  cursor: default;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  cursor: none;
+}
+
+*:hover {
+  cursor: none;
 }
 
 html {
@@ -10,7 +14,7 @@ html {
   background-color: #f4f4f4;
   -webkit-text-size-adjust: 100%;
   min-height: 90%;
-  letter-spacing: 20px;
+  letter-spacing: 1.25rem;
   margin: 5rem;
 }
 
@@ -19,28 +23,21 @@ body {
   overflow: hidden;
 }
 
-#examples menu {
-  margin: 1rem 10rem;
-  padding: 0;
-  padding-top: 10rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  list-style: none;
-}
-
 .verticalline {
   position: absolute;
   width: 3px;
-  height: 400px;
-  margin-left: 700px;
-  margin-top: 250px;
+  height: 25rem;
+  margin-left: 46.875rem;
+  margin-top: 15.625rem;
   background: linear-gradient(to top, transparent, #e6e6e6 50%, #e6e6e6 50%, transparent);
-  
-  /* fade in */
+}
+
+/* fade in */
+.verticalline {
   opacity: 0;
   animation: fadeIn 5s forwards 3s;
 }
+
 
 @keyframes fadeIn {
   from {
@@ -51,38 +48,11 @@ body {
   }
 }
 
-#examples menu button {
-  position: absolute;
-  margin: 10rem 1rem;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  display: block;
-  transition: all 0.2s ease-in-out;
-  letter-spacing: 10px;
-  background: none;
-  font-size: larger;
-}
 
-#examples menu button:hover {
-  font-size: x-large;
-  font-weight: bolder;
+/* resolution settings */
+@media only screen and (min-width: 1920px) and (max-width: 2559px) {
+  .verticalline {
+    margin-left: 30rem;
+    margin-top: 12rem;
+  }
 }
-
-#examples menu button.active {
-  font-weight: bolder;
-}
-
-#tab-content {
-  width: 20rem;
-  height: 500px;
-  position: relative;
-  margin-top: -20rem;
-  margin-left: 50rem;
-  text-align: left;
-  border-radius: 6px;
-  letter-spacing: 5px;
-  line-height: 20px;
-}
-

@@ -1,17 +1,18 @@
 import React from "react";
-import "./TabButton.css";
+import "./TabButton.css";  
+import FadeIn from "../FadeIn/FadeIn";
 
 const TabButton = ({ children, onSelect, isSelected }) => {
   return (
-    <li>
-      <button
-        className={isSelected ? "active" : undefined}
-        onClick={onSelect}
-        data-testid="tab-button"
-      >
-        {children}
-      </button>
-    </li>
+    <FadeIn>
+      <li>
+        <button
+          className={`btn ${isSelected ? "active" : ""}`}
+          onClick={onSelect}>
+          {children}
+        </button>
+      </li>
+    </FadeIn>
   );
 };
 

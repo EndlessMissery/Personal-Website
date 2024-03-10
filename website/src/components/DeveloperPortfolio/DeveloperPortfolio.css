@@ -2,22 +2,18 @@
   position: relative;
   display: flex;
   flex-wrap: nowrap;
-  width: 400px;
-  margin-left: 70px;
-  opacity: 0;
-  transition: opacity 3s ease-in-out;
-}
-
-.projects.fade-in {
-  opacity: 1;
+  width: 25rem;
+  margin-left: 4.375rem;
+  font-size: auto;
 }
 
 .difficulty-sections {
   display: flex;
+  font-size: 1rem;
 }
 
 .difficulty-section {
-  margin-right: 20px;
+  margin-right: 1.25rem;
   overflow: hidden;
   text-align: center;
 }
@@ -26,14 +22,12 @@
 .scroll-container-intermediate,
 .scroll-container-expert {
   text-align: center;
-  height: 500px;
-  width: 400px;
+  height: 31.25rem;
+  width: 25rem;
   overflow-y: auto;
   overflow-x: hidden;
-  padding-left: 15px;
+  padding-left: 0.938rem;
   transition: max-height 0.3s ease;
-
-
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
 }
@@ -41,14 +35,14 @@
 .scroll-container-beginner::-webkit-scrollbar,
 .scroll-container-intermediate::-webkit-scrollbar,
 .scroll-container-expert::-webkit-scrollbar {
-  width: 12px;
+  width: 0.75rem;
 }
 
 .scroll-container-beginner::-webkit-scrollbar-thumb,
 .scroll-container-intermediate::-webkit-scrollbar-thumb,
 .scroll-container-expert::-webkit-scrollbar-thumb {
   background-color: transparent;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .scroll-container-beginner::-webkit-scrollbar-track,
@@ -60,38 +54,35 @@
 .difficulty-section:hover .scroll-container-beginner,
 .difficulty-section:hover .scroll-container-intermediate,
 .difficulty-section:hover .scroll-container-expert {
-  height: 500px;
+  height: 31.25rem;
   overflow-y: auto;
 }
 
 .beginner,
 .intermediate,
 .expert {
-  width: 400px;
+  width: 25rem;
   height: 100%;
   text-align: center;
-  cursor: default;
   margin-bottom: 1.5rem;
   border-radius: 5px;
-  
+  font-size: 1rem;
 }
 
 .links {
   color: #1f1f1f;
   font-weight: bold;
   background: none;
-  height: 40px;
-  width: 200px;
+  height: 2.5rem;
+  width: 12.5rem;
   border-radius: 25px;
   border: none;
-  letter-spacing: 5px;
-  cursor: pointer;
+  letter-spacing: 0.313rem;
   transition: color 0.2s ease-in-out;
   margin: 0rem;
   font-size: small;
   transition: all 0.2s ease-in-out;
   text-transform: uppercase;
-  text-decoration: underline;
 }
 
 .links:hover {
@@ -99,8 +90,8 @@
   text-decoration: none;
   border: none;
   outline: none;
-  text-decoration: underline;
-
+  font-size: larger;
+  width: 15.625rem;
 }
 
 .links:active {
@@ -109,9 +100,41 @@
 
 .custom-hr {
   position: relative;
-  margin-top: 30px;
+  margin-top: 1.875rem;
   border: 0;
   height: 3px;
   background: linear-gradient(to right, #f4f4f4, #e6e6e6, #f4f4f4);
 }
 
+/* fade in */
+.projects {
+  opacity: 0;
+  animation: fadeIn 5s forwards;
+}
+
+
+/* resolution settings */
+@media only screen and (min-width: 1920px) and (max-width: 2559px) {
+  .difficulty-sections {
+    margin-left: -20rem;
+    margin-top: 0rem;
+    max-height: 25rem;
+    font-size: 0.65rem;
+  }
+  .links {
+    font-size: 0.65rem;
+  }
+  .scroll-container-beginner,
+  .scroll-container-intermediate,
+  .scroll-container-expert {
+  text-align: center;
+  max-height: 25rem;
+  width: 25rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-left: 0.938rem;
+  transition: max-height 0.3s ease;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+}
