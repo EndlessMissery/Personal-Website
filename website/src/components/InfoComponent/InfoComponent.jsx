@@ -4,6 +4,7 @@ import FadeIn from "../FadeIn/FadeIn";
 
 
 
+
 const InfoComponent = ({ educations }) => {
   const renderEducationByLevel = (level) => {
     return educations

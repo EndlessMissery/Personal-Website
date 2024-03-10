@@ -5,38 +5,40 @@ import DeveloperPortfolio from "./components/DeveloperPortfolio/DeveloperPortfol
 import ContactInfo from "./components/ContactInfo/ContactInfo.jsx";
 import AboutMe from "./components/AboutMe/AboutMe.jsx";
 import InfoComponent from "./components/InfoComponent/InfoComponent.jsx";
-// import { EDUCATION } from "./components/InfoComponent/education.js";
-// import { PORTFOLIO } from "./components/DeveloperPortfolio/portfolio.js";
-import { EXAMPLES } from "./data.js";
-//import { CONTACT } from "./components/ContactInfo/contact.js";
+import { EDUCATION } from "./components/InfoComponent/education.js";
+import { PORTFOLIO } from "./components/DeveloperPortfolio/portfolio.js";
+import { CONTACT } from "./components/ContactInfo/contact.js";
 import CustomCursor from "./components/CustomCursor/CustomCursor.jsx";
 
-
-
-
-
-
-
-
 function App() {
-  const [selectedTopic, setSelectedTopic] = useState(() => localStorage.getItem("selectedTopic"));
+  const [selectedTopic, setSelectedTopic] = useState("home");
 
   useEffect(() => {
-    if (selectedTopic) localStorage.setItem("selectedTopic", selectedTopic);
-  }, [selectedTopic]);
+    // Retrieve the selected topic from localStorage on component mount
+    const storedTopic = localStorage.getItem("selectedTopic");
+    if (storedTopic) {
+      setSelectedTopic(storedTopic);
+    }
+  }, []);
 
-  const handleSelect = (selectedButton) => setSelectedTopic(selectedButton);
+  const handleSelect = (selectedButton) => {
+    setSelectedTopic(selectedButton);
+    // Store the selected topic in localStorage
+    localStorage.setItem("selectedTopic", selectedButton);
+  };
 
   const renderContent = () => {
     switch (selectedTopic) {
       case "portfolio":
-        return <DeveloperPortfolio projects={EXAMPLES.portfolio.projects} />;
+        return <DeveloperPortfolio projects={PORTFOLIO.portfolio.projects} />;
       case "contact":
-        return <ContactInfo />;
+        return <ContactInfo contacts={CONTACT.contactlist.contacts} />;
       case "info":
-        return <InfoComponent educations={EXAMPLES.info.educations} />;
+        return <InfoComponent educations={EDUCATION.info.edu} />;
+      case "about":
+        return <AboutMe />;
       default:
-        return <AboutMe selectedTopic={selectedTopic} />;
+        return null;
     }
   };
 
@@ -51,7 +53,8 @@ function App() {
             <React.Fragment key={topic}>
               <TabButton
                 isSelected={selectedTopic === topic}
-                onSelect={() => handleSelect(topic)}>
+                onSelect={() => handleSelect(topic)}
+              >
                 {topic.charAt(0).toUpperCase() + topic.slice(1)}
               </TabButton>
               <br />

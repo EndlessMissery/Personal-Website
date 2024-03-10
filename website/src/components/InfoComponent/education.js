@@ -1,7 +1,7 @@
 export const EDUCATION = {
-
+    
     info: {
-        educations: [
+        edu: [
         {
         level: "College",
         school: "Palacký University Olomouc",
