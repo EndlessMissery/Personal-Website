@@ -9,7 +9,6 @@ export const DESIGN = {
     designs: {
         designprojects: [
             {
-                title: "login screen",
                 gif: video1,
                 image: projectImg1
             },
