@@ -16,7 +16,7 @@
 }
 
 
-/* fade in */
+/* animations */
 .educations {
   opacity: 0;
   animation: fadeIn 5s forwards;

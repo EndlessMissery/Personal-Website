@@ -10,7 +10,7 @@
   left: 12.5rem;
   text-align: center;
   line-height: 1rem;
-  width: 22.5rem;
+  width: 23rem;
   margin-left: 0.5rem;
   transform: scale(.75);
   letter-spacing: 0.5rem;
@@ -56,6 +56,7 @@
 
 
 
+/* scroll */
 .scroll-container-beginner,
 .scroll-container-intermediate,
 .scroll-container-expert {
@@ -95,6 +96,7 @@
 }
 
 
+
 /* animations */
 .links:hover {
   color: #000000;
@@ -107,174 +109,8 @@
   color: #1f1f1f;
 }
 
-/*
-.links {
-  color: #1f1f1f;
-  font-weight: bold;
-  background: none;
-  height: 2.5rem;
-  width: 12.5rem;
-  border-radius: 25px;
-  border: none;
-  letter-spacing: 0.313rem;
-  transition: color 0.2s ease-in-out;
-  font-size: small;
-  transition: all 0.2s ease-in-out;
-  text-transform: uppercase;
-  margin-top: 1rem;
-}
-
-
-
-
-
-
-/* fade in */
 .projects {
   opacity: 0;
   animation: fadeIn 5s forwards;
 }
 
-/* resolution settings */
-/* FHD */
-@media only screen and (width: 1920px) and (height: 1080px) {
-  .difficulty-sections {
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-27rem);
-    margin-top: 0rem;
-    max-height: 25rem;
-    font-size: 0.65rem;
-  }
-
-  .links {
-    margin-top: 10px;
-    font-size: 0.65rem;
-  }
-
-  .scroll-container-beginner,
-  .scroll-container-intermediate,
-  .scroll-container-expert {
-    text-align: center;
-    max-height: 25rem;
-    width: 25rem;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding-left: 0.938rem;
-    transition: max-height 0.3s ease;
-    scrollbar-width: thin;
-    scrollbar-color: transparent transparent;
-  }
-
-  .links:hover {
-    color: #000000;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    transform: scale(1.1);
-    width: 15.625rem;
-  }
-}
-
-/* 2K */
-@media only screen and (width: 2560px) and (height: 1440px) {
-  .difficulty-sections {
-    -webkit-transform: translateX(-27rem);
-    transform: translateX(-27rem);
-    margin-left: 5rem;
-    margin-top: 3rem;
-    max-height: 30rem;
-    transform: scale(1.1);
-  }
-  .links {
-    margin-top: 10px;
-    transform: scale(1);
-  }
-
-  .scroll-container-beginner,
-  .scroll-container-intermediate,
-  .scroll-container-expert {
-    text-align: center;
-    max-height: 25rem;
-    width: 25rem;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding-left: 0.938rem;
-    transition: max-height 0.3s ease;
-    scrollbar-width: thin;
-    scrollbar-color: transparent transparent;
-  }
-
-  .links:hover {
-    color: #000000;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    font-size: 0.8rem;
-    width: 15.625rem;
-  }
-}
-
-@-moz-document url-prefix() {
-  .difficulty-section {
-    margin-right: 5.25rem;
-    overflow: hidden;
-    text-align: center;
-    font-size: 0.8rem;
-    position: relative;
-    left: -50px;
-  }
-  .projects {
-    position: relative;
-    display: flex;
-    flex-wrap: nowrap;
-    width: 25rem;
-    margin-left: -1rem;
-    font-size: auto;
-    line-height: 1.5;
-    top: -50px;
-  }
-  .difficulty-sections {
-    transform: translateX(6rem);
-  }
-
-}
-
-
-@-moz-document url-prefix() {
-  @media only screen and (width: 1920px) and (height: 1080px) {
-    .difficulty-sections {
-      -webkit-transform: translateX(-50%);
-      transform: translateX(-15rem);
-      margin-top: 0rem;
-      max-height: 30rem;
-    }
-  
-    .links {
-      margin-top: 10px;
-      font-size: 0.65rem;
-    }
-  
-    .scroll-container-beginner,
-    .scroll-container-intermediate,
-    .scroll-container-expert {
-      text-align: center;
-      max-height: 25rem;
-      width: 20rem;
-      overflow-y: auto;
-      overflow-x: hidden;
-      padding-left: 0.938rem;
-      transition: max-height 0.3s ease;
-      scrollbar-width: thin;
-      scrollbar-color: transparent transparent;
-    }
-
-  
-    .links:hover {
-      color: #000000;
-      text-decoration: none;
-      border: none;
-      outline: none;
-      width: 15.625rem;
-    }
-  }
-}

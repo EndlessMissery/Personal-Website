@@ -8,8 +8,7 @@ const TabButton = ({ children, onSelect, isSelected }) => {
       <li>
         <button
           className={`btn ${isSelected ? "active" : ""}`}
-          onClick={onSelect}
-        >
+          onClick={onSelect}>
           {children}
         </button>
       </li>

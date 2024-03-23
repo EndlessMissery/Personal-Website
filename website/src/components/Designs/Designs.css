@@ -1,0 +1,82 @@
+.legend {
+    position: relative;
+    letter-spacing: 5px;
+    font-size: smaller;
+}
+
+.designs-container {
+    position: relative;
+    top: -620px;
+    left: 200px;
+    width: 70%;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+
+
+.design-image {
+    border-radius: 20px;
+    position: relative;
+    margin: 0 10px;
+    height: 200px;
+    width: 300px;
+    transition: 0.5s;
+}
+
+.design-image:active {
+    width: 75%;
+    height: 75%;
+    transition: 0.5s;
+    border-radius: 40px;
+}
+
+
+.paused {
+    animation-play-state: paused;
+}
+
+
+
+/* animations */
+.legend {
+    animation: fadeIn 5s forwards;
+}
+
+.design-image {
+    animation: fadeIn 5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+/* scroll */
+.designs-container {
+    overflow-x: auto;
+}
+
+.designs-container::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+    height: 3px;
+}
+
+.designs-container::-webkit-scrollbar-track {
+    background: none; /* Color of the track */
+}
+
+.designs-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(to left, transparent, #cccccc 50%, #cccccc 50%, transparent);
+    border-radius: 20px; /* Radius of the thumb */
+}

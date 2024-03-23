@@ -8,13 +8,14 @@ import InfoComponent from "./components/InfoComponent/InfoComponent.jsx";
 import { EDUCATION } from "./components/InfoComponent/education.js";
 import { PORTFOLIO } from "./components/DeveloperPortfolio/portfolio.js";
 import { CONTACT } from "./components/ContactInfo/contact.js";
+import Design from "./components/Designs/Designs.jsx";
 import CustomCursor from "./components/CustomCursor/CustomCursor.jsx";
 
 function App() {
   const [selectedTopic, setSelectedTopic] = useState("home");
 
   useEffect(() => {
-    // Retrieve the selected topic from localStorage on component mount
+    // Retrieve the selected from localStorage
     const storedTopic = localStorage.getItem("selectedTopic");
     if (storedTopic) {
       setSelectedTopic(storedTopic);
@@ -23,7 +24,7 @@ function App() {
 
   const handleSelect = (selectedButton) => {
     setSelectedTopic(selectedButton);
-    // Store the selected topic in localStorage
+    // Store in localStorage
     localStorage.setItem("selectedTopic", selectedButton);
   };
 
@@ -31,11 +32,13 @@ function App() {
     switch (selectedTopic) {
       case "portfolio":
         return <DeveloperPortfolio projects={PORTFOLIO.portfolio.projects} />;
+      case "designs":
+        return <Design />;
       case "contact":
         return <ContactInfo contacts={CONTACT.contactlist.contacts} />;
       case "info":
         return <InfoComponent educations={EDUCATION.info.edu} />;
-      case "about":
+      case "about me":
         return <AboutMe />;
       default:
         return null;
@@ -49,12 +52,11 @@ function App() {
       <div className="verticalline"></div>
       <section id="examples">
         <menu>
-          {["home", "portfolio", "about", "info", "contact"].map((topic) => (
+          {["home", "portfolio", "designs", "about me", "info", "contact"].map((topic) => (
             <React.Fragment key={topic}>
               <TabButton
                 isSelected={selectedTopic === topic}
-                onSelect={() => handleSelect(topic)}
-              >
+                onSelect={() => handleSelect(topic)}>
                 {topic.charAt(0).toUpperCase() + topic.slice(1)}
               </TabButton>
               <br />
