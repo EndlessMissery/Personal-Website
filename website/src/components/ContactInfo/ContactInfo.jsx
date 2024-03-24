@@ -46,11 +46,6 @@ const ContactInfo = () => {
           <AiOutlinePhone className="contact-icon" id='phone' onClick={handlePhoneClick} />
         </p>
         <p>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="contact-icon" id='linkedin'>
-            <AiFillLinkedin />
-          </a>
-        </p>
-        <p>
           <a href="https://github.com/EndlessMissery" target="_blank" rel="noopener noreferrer" className="contact-icon" id='github'>
             <AiFillGithub />
           </a>
