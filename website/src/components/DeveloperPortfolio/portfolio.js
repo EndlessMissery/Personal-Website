@@ -41,8 +41,14 @@ portfolio: {
       {
         difficulty: "Intermediate",
         title: "WeatherApp",
-        technologies: ["HTML", "CSS", "JSReact"],
+        technologies: ["HTML", "CSS", "ReactJS"],
         link: "https://github.com/EndlessMissery/Weather-ReactJS-",
+      },
+      {
+        difficulty: "Intermediate",
+        title: "Personal Website",
+        technologies: ["HTML", "CSS", "ReactJS"],
+        link: "https://github.com/EndlessMissery/Personal-Website",
       },
       {
         difficulty: "Expert",
