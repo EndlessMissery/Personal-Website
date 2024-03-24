@@ -36,7 +36,7 @@ function App() {
         return <Design />;
       case "contact":
         return <ContactInfo contacts={CONTACT.contactlist.contacts} />;
-      case "info":
+      case "education":
         return <InfoComponent educations={EDUCATION.info.edu} />;
       case "about me":
         return <AboutMe />;
@@ -52,7 +52,7 @@ function App() {
       <div className="verticalline"></div>
       <section id="examples">
         <menu>
-          {["home", "portfolio", "designs", "about me", "info", "contact"].map((topic) => (
+          {["home", "portfolio", "designs", "about me", "education", "contact"].map((topic) => (
             <React.Fragment key={topic}>
               <TabButton
                 isSelected={selectedTopic === topic}

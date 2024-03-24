@@ -1,12 +1,14 @@
 .level-sections {
   position: relative;
   display: flex;
+  gap: 50px;
   text-align: center;
-  left: 45rem;
-  bottom: 40rem;
+  left: 40rem;
+  bottom: 30rem;
   width: 50%;
   transform: scale(0.75);
 }
+
 
 .education-item {
   margin-top: 10px;
@@ -15,7 +17,10 @@
   line-height: 1.5rem;
 }
 
-
+.lower {
+  position: relative;
+  top: 60px;
+}
 /* animations */
 .educations {
   opacity: 0;

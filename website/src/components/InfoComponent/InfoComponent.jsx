@@ -31,6 +31,11 @@ const InfoComponent = ({ educations }) => {
             <h2 className="level-name">High School</h2>
             {renderEducationByLevel("High school")}
           </div>
+          <div className="lower">
+          <div className="level-section">
+            {renderEducationByLevel("Lower High school")}
+          </div>
+          </div>
         </div>
       </div>
     </FadeIn>

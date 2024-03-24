@@ -1,11 +1,10 @@
-.about,
-.about-2,
-.about-3 {
-  text-align: justify;
-  font-size: larger;
-  letter-spacing: 1rem;
+#aboutme {
+  letter-spacing: 3px;
   position: relative;
-  width: 400px;
+  width: 300px;
+  font-size: smaller;
+  top: -550px;
+  left: 35%;
 }
 
 .about {
@@ -17,10 +16,12 @@
 }
 
 .about-2 {
+  text-align: justify;
   background: linear-gradient(to left, #1f1f1f, rgb(0, 0, 0), #1f1f1f);
   -webkit-background-clip: text;
   color: transparent;
-  left: 175%;
+  position: relative;
+  left: 100%;
 }
 
 .about-3 {
@@ -28,31 +29,8 @@
   background: linear-gradient(to top, #ababab, #1f1f1f);
   -webkit-background-clip: text;
   color: transparent;
-  left: 300%;
-}
-
-.first-part,
-.sec-part,
-.thrd-part {
   position: relative;
-  width: 31.25rem;
-  height: 31.25rem;
-  letter-spacing: 0.5rem;
-}
-
-.first-part {
-  margin-top: -50rem;
-  margin-left: 0rem;
-}
-
-.sec-part {
-  margin-top: -20rem;
-  margin-left: 10rem;
-}
-
-.thrd-part {
-  margin-top: -20rem;
-  margin-left: 20rem;
+  left: 200%;
 }
 
 /* fade in */

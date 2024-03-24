@@ -16,7 +16,7 @@ export const EDUCATION = {
         },
         {
         school: "SŠTO Kosinova Olomouc",
-        level: "High school",
+        level: "Lower High school",
         field: "Smart networks",
         year: "2014-2016"
         },

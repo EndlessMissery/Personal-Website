@@ -40,7 +40,15 @@ export const DESIGN = {
                 image: " "
             }, 
             {
-                //gif: " ",
+                gif: " ",
+                image: " "
+            }, 
+            {
+                gif: " ",
+                image: " "
+            }, 
+            {
+                gif: " ",
                 image: " "
             }, 
             {
