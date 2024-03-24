@@ -15,28 +15,34 @@ portfolio: {
         link: "https://github.com/EndlessMissery/Dice-game-VanillaJS-",
       },
       {
-        difficulty: "Intermediate",
+        difficulty: "Beginner",
         title: "Calculator",
         technologies: ["HTML", "CSS", "JavaScript"],
         link: "https://github.com/EndlessMissery/Calculator-VanillaJS-",
       },
       {
-        difficulty: "Intermediate",
+        difficulty: "Beginner",
         title: "ToDoList",
         technologies: ["HTML", "CSS", "JavaScript"],
         link: "https://github.com/EndlessMissery/To-do-list-VanillaJS-",
       },
       {
-        difficulty: "Intermediate",
+        difficulty: "Beginner",
         title: "Snake",
         technologies: ["HTML", "CSS", "JavaScript"],
         link: "https://github.com/EndlessMissery/Snake-VanillaJS-",
       },
       {
-        difficulty: "Intermediate",
+        difficulty: "Beginner",
         title: "WeatherApp",
         technologies: ["HTML", "CSS", "JavaScript"],
         link: "https://github.com/EndlessMissery/Weather-VanillaJS-",
+      },
+      {
+        difficulty: "Intermediate",
+        title: "WeatherApp",
+        technologies: ["HTML", "CSS", "JSReact"],
+        link: "https://github.com/EndlessMissery/Weather-ReactJS-",
       },
       {
         difficulty: "Expert",
