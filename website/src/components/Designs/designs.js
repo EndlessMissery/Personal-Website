@@ -34,58 +34,6 @@ export const DESIGN = {
             {
                 gif: tbd,
                 image: tbd
-            }, 
-            {
-                gif: " ",
-                image: " "
-            }, 
-            {
-                gif: " ",
-                image: " "
-            }, 
-            {
-                gif: " ",
-                image: " "
-            }, 
-            {
-                gif: " ",
-                image: " "
-            }, 
-            {
-                gif: " ",
-                image: " "
-            }, 
-            {
-                gif: " ",
-                image: " "
-            }, 
-            {
-                gif: " ",
-                image: " "
-            }, 
-            {
-                gif: " ",
-                image: " "
-            }, 
-            {
-                gif: " ",
-                image: " "
-            }, 
-            {
-                gif: " ",
-                image: " "
-            }, 
-            {
-                gif: " ",
-                image: " "
-            }, 
-            {
-                gif: " ",
-                image: " "
-            }, 
-            {
-                gif: " ",
-                image: " "
             }
         ]
         
