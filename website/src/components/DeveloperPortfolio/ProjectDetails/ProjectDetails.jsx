@@ -2,9 +2,14 @@ import React from "react";
 
 const ProjectDetails = ({ project }) => {
   const projectLink = project.link;
+  const projectUrl = project.url;
 
   const handleViewProject = () => {
     window.open(projectLink, "_blank");
+  };
+
+  const handleViewApp = () => {
+    window.open(projectUrl, "_blank");
   };
 
   return (
@@ -15,8 +20,17 @@ const ProjectDetails = ({ project }) => {
       {projectLink && (
         <>
           <button className="links" onClick={handleViewProject}>
-            View Project
+            Source Code
           </button>
+          {projectUrl && (
+        <>
+        <br />
+          <button className="links" onClick={handleViewApp}>
+            View App
+          </button>
+        </>
+      )}
+
           <hr className="custom-hr" />
         </>
       )}

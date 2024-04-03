@@ -40,6 +40,13 @@ portfolio: {
       },
       {
         difficulty: "Intermediate",
+        title: "Multifunction App",
+        technologies: ["HTML", "CSS", "ReactJS"],
+        link: "https://github.com/EndlessMissery/Multifunction-App",
+        url: "https://multi-rk-app.netlify.app"
+      },
+      {
+        difficulty: "Intermediate",
         title: "WeatherApp",
         technologies: ["HTML", "CSS", "ReactJS"],
         link: "https://github.com/EndlessMissery/Weather-ReactJS-",
