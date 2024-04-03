@@ -25,7 +25,7 @@ const ProjectDetails = ({ project }) => {
           {projectUrl && (
         <>
         <br />
-          <button className="links" onClick={handleViewApp}>
+          <button className="links" id="links-app" onClick={handleViewApp}>
             View App
           </button>
         </>

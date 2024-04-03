@@ -36,6 +36,10 @@
   transform: scale(1.2);
 }
 
+#links-app {
+  margin-top: 0;
+}
+
 .custom-hr {
   position: relative;
   margin-bottom: 0.5rem;
